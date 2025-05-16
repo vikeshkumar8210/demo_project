@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f2f5;
+    }
+    .navbar {
+      background-color: #022496c0;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .content {
+      padding: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    th, td {
+      padding: 12px 20px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f57906;
+      color: white;
+    }
+    .logout-btn {
+      background: #f57906;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  <h1>Welcome, {{ request.user.username }}</h1>
+  <a class="logout-btn" href="{% url 'logout' %}">Logout</a>
+</div>
+
+<div class="content">
+  <h2>Student List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Roll Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for student in students %}
+        <tr>
+          <td>{{ student.name }}</td>
+          <td>{{ student.roll_number }}</td>
+        </tr>
+      {% empty %}
+        <tr>
+          <td colspan="2">No students found.</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

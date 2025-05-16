@@ -1,0 +1,5 @@
+.left-section img {
+    width: 160px;  /* increase this value as needed */
+    height: auto;  /* keeps the aspect ratio */
+    margin-bottom: 20px;
+}
