@@ -39,6 +39,10 @@ Setup Instructions
 7. Open your browser and go to:
    - Home: http://127.0.0.1:8000/
    - Admin: http://127.0.0.1:8000/admin/
+  
+### 🔐 Login Page Screenshot
+
+![Login Page](https://github.com/vikeshkumar8210/demo_project/blob/main/login.png)
 
 Notes
 -----
