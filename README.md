@@ -14,7 +14,7 @@ Setup Instructions
 ------------------
 
 1. Clone the project:
-   git clone https://github.com/vikeshkumar8210/your-project-name.git
+   git clone https://github.com/vikeshkumar8210/demo_project.git
    cd your-project-name
 
 2. Create a virtual environment (recommended):
