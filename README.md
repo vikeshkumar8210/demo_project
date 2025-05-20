@@ -44,6 +44,9 @@ Setup Instructions
 
 ![Login Page](https://github.com/vikeshkumar8210/demo_project/blob/main/login.png)
 
+### Admin Page Screenshot
+![Admin page](https://github.com/vikeshkumar8210/demo_project/blob/main/admin.png)
+
 Notes
 -----
 - Default database: SQLite (no setup needed)
